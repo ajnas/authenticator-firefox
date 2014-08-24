@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Authenticator</title>
+        <script src="jquery.js"></script>
+        <script src="main.js"></script>
+        <style>
+        body {
+            background: #414141;
+            color: #FFF;
+            border: 0;
+            margin: 0;
+            min-width: 550px;
+            overflow-x: hidden;
+            font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+            font-size: 1em;
+        }
+
+        body{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .main-container{
+            /*position: fixed; */
+        }
+
+        .container{
+            float: left;
+            width: 210px;
+            margin: 20px;
+            padding: 10px;
+
+            font-size: 0.8em;
+        }
+        .description{
+            cursor:default;
+            float: left;
+            width: 200px;
+            margin: 40px 20px 20px;
+            padding: 10px;
+
+            line-height: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+
+        #main-form label+input{
+            display: block;
+        }
+
+        #main-form input, #main-form #submit{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #main-form #username, #main-form #password{
+            width: 200px;
+            height: 30px;
+
+            padding: 3px;
+            border: 0;
+
+            border: 2px solid #696969;
+            background: #9B9B9B;
+            color: #FFF;
+
+            font-size: 1.4em;
+            font-family: Monaco, Consolas, "Lucida Console", monospace;
+            font-weight: bold;
+        }
+
+        #main-form .submit{
+            width: 210px;
+            height: 36px;
+            color: #FFF;
+
+            border: 2px solid #696969;
+            background: #9B9B9B;
+
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #main-form .success{
+            width: 210px;
+            height: 36px;
+            color: #FFF;
+
+            border: 2px solid #CECECE;
+            background: #606060;
+
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #main-form .submit:hover{
+            cursor: pointer;
+            border: 2px solid #E1E1E1;
+            background:  #333333;
+        }
+
+        .btn{
+            width: 210px;
+            height: 36px;
+            color: #FFF;
+
+            border: 2px solid #696969;
+            background: #9B9B9B;
+
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            border: 2px solid #E1E1E1;
+            background:  #333333;
+        }
+
+        .description .message{
+            color: #FF5353;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container">
+                <form method="post" action="#" id="main-form">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <button type="submit" id="submit" class="submit">Save Credentials</button>
+                </form>
+                
+                <div style="height:60px;"></div>
+                <button type="button" id="authenticate" class="btn">Authenticate</button>
+            </div>
+            <div class="description">
+                <img src="logo.png" width="150" height="150"><br>
+                Save your username and password. You will be authenticated automatically.<br><br>
+
+                If it does not work, try the <strong>Authenticate</strong> button manually after opening the page.
+                <br><br>
+                <span class="message" id="message">
+                </span>
+            </div>
+            <div style="clear:both"></div>
+            
+        </div>
+        
+    </body>
+</html>
