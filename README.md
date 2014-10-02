@@ -7,6 +7,8 @@ Usage
 ------------
 You need the Add-on SDK from Mozilla to test Firefox Add-ons. Follow the instructions on [their website](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials#getting-started) for more details.
 
+Download the packaged extension: [Download Page](http://www.clusterdev.com/nitc-authenticator/)
+
 
 Developers
 ----------
