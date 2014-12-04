@@ -3,6 +3,9 @@ NITC Authenticator
 
 A Firefox addon to automatically complete the Campus Networking Centre authentication. The username and password is to be entered just once inside the extension.
 
+This addon is available for Chrome and Firefox. Visit the [**downloads page**](http://www.clusterdev.com/nitc-authenticator/) for instructions.
+
+
 Usage
 ------------
 You need the Add-on SDK from Mozilla to test Firefox Add-ons. Follow the instructions on [their website](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials#getting-started) for more details.
